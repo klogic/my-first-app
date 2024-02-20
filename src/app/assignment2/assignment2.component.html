@@ -1,0 +1,11 @@
+<button (click)="onDisplayBtnClicked()">display details</button>
+<p [ngClass]="{ hidden: click % 2 === 1 }">secret password = tuna</p>
+
+@for(theClick of clicks; track theClick; let i = $index){ @if(i>0){ @if(i>5){
+
+<p [ngStyle]="{ 'background-color': 'blue', color: 'white' }">
+  {{ theClick }}
+</p>
+}@else{
+<p>{{ theClick }}</p>
+} } }

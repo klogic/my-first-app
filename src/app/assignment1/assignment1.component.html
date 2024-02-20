@@ -1,0 +1,14 @@
+<input
+  type="text"
+  name="username"
+  id="username"
+  [(ngModel)]="userName"
+  (input)="onUserNameChanged($event)"
+/>
+<br />
+<button [disabled]="!allowAddUserName" (click)="onClickAddUserName()">
+  Add UserName
+</button>
+<p>{{ userName }}</p>
+<p>{{ userNameList }}</p>
+<!-- <p ng-repeat="(key, value) in userNameList">{{ key }}: {{ value }}</p> -->
